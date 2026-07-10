@@ -1,10 +1,12 @@
 # CV
 
-A small tool to generate nice, ATS-compliant PDF files from your Markdown CV
+A small tool to generate nice, ATS-compliant PDF files from your Markdown CV.
+
+See [an example PDF of the output](https://github.com/bomberstudios/cv.md/blob/main/history/cv-2026-07-10T09-21-42.pdf).
 
 ## Usage
 
-- Fork the project
+- Fork the project (use this [one click fork link](https://github.com/new?template_name=cv.md&template_owner=bomberstudios))
 - Edit the `cv.md` file with your actual info
 - Commit the changes and push to GitHub
 - GitHub Actions will generate a PDF file for each push on the `history` folder
