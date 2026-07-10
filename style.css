@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;570;600&display=swap");
+
+:root {
+  --brand: #f60;
+  --ink: #333;
+  --ink-subtle: #555;
+  --ink-subtler: #888;
+  --subtle: #999;
+  --subtler: #ccc;
+
+  --bip: 3pt;
+  --xxs: calc(var(--bip) * 0.5);
+  --xs: var(--bip);
+  --s: calc(var(--bip) * 2);
+  --m: calc(var(--bip) * 3);
+  --l: calc(var(--bip) * 4);
+  --xl: calc(var(--bip) * 6);
+  --xxl: calc(var(--bip) * 8);
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: var(--m);
+  letter-spacing: -2%;
+  line-height: 1.5;
+  color: var(--ink);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: var(--xxl);
+  font-weight: 300;
+  color: var(--brand);
+  margin-bottom: var(--xs);
+}
+
+h2 {
+  font-size: var(--xl);
+  font-weight: 400;
+  color: var(--brand);
+  margin: var(--xl) 0 var(--m) 0;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: var(--l);
+  margin-bottom: var(--xs);
+}
+
+em {
+  color: var(--ink-subtler);
+  font-style: normal;
+}
+
+h4 {
+  color: var(--ink-subtler);
+  font-style: normal;
+  font-weight: 400;
+}
+
+p {
+  margin: 0 0 var(--xs) 0;
+  text-wrap-style: pretty;
+}
+
+ol,
+ul {
+  list-style-type: square;
+  margin: var(--s) var(--xxl) var(--l) var(--xl);
+  padding: 0;
+  /* not super happy with how balance looks in this layout */
+  text-wrap-style: balance;
+  text-wrap-style: pretty;
+}
+
+li + li {
+  margin-top: var(--xxs);
+}
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--subtler);
+  margin: var(--m) 0;
+}
+strong {
+  font-weight: 570;
+  color: var(--brand-subtle);
+}
+
+.page-break {
+  page-break-before: always;
+}

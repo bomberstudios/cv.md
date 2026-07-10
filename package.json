@@ -1,0 +1,13 @@
+{
+  "name": "cv",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run build",
+    "build": "md-to-pdf cv.md --stylesheet style.css",
+    "watch": "md-to-pdf cv.md --stylesheet style.css --watch"
+  },
+  "devDependencies": {
+    "md-to-pdf": "^5.2.5"
+  }
+}
