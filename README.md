@@ -1,6 +1,8 @@
 # CV.md
 
-A small tool to generate nice, ATS-compliant PDF files from your Markdown CV. Works entirely online so you can make small adjustments to your CV from your mobile before applying to your dream job from the beach.
+A small tool to generate nice, ATS-compliant PDF files from your Markdown CV.
+
+Works entirely online so you can make small adjustments to your CV from your mobile before applying to your dream job from the beach.
 
 See [an example PDF of the output](https://github.com/bomberstudios/cv.md/blob/main/history/cv-2026-07-10T09-21-42.pdf).
 
@@ -21,6 +23,8 @@ npm start
 ```
 
 to get a `cv.pdf` in your project's root. There's also a `npm run watch` task you can use while tweaking the style locally, that regenerates the PDF whenever the `cv.md` file changes. I recommend using it in conjunction with something like [Skim](https://skim-app.sourceforge.io), which will reload your PDF automatically when it's updated.
+
+Keep in mind that running the tool locally does not store PDF files in `history`.
 
 ## Customizing the output
 
