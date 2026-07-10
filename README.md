@@ -5,7 +5,7 @@ A small tool to generate nice, ATS-compliant PDF files from your Markdown CV
 ## Usage
 
 - Fork the project
-- Edit the `cv.md` file
+- Edit the `cv.md` file with your actual info
 - Commit the changes and push to GitHub
 - GitHub Actions will generate a PDF file for each push on the `history` folder
 
@@ -18,13 +18,24 @@ npm install
 npm start
 ```
 
-to get a `cv.pdf` in your project's root.
+to get a `cv.pdf` in your project's root. There's also a `npm run watch` task you can use while tweaking the style locally, that regenerates the PDF whenever the `cv.md` file changes. I recommend using it in conjunction with something like [Skim](https://skim-app.sourceforge.io), which will reload your PDF automatically when it's updated.
 
 ## Customizing the output
 
 As a designer by trade, I've spent some time making the output look reasonably good. But if you're not happy with something, you can change things by editing `style.css`.
 
 To change the paper size or the margins for the output PDF, you can tweak the front-matter values in `cv.md`.
+
+To add a page break wherever you want in your CV, add this line in the Markdown source:
+
+```html
+<div class="page-break"></div>
+```
+
+## Some tips
+
+- You can use [git tags](https://git-scm.com/book/en/v2/Git-Basics-Tagging) to keep track of your CV history. For example, you can use something like `company-role-date` when you apply for _role_ at _company_ on _date_, so you can always check exactly how your CV looked like for that application
+- You can add tracking parameters to your website's URL, while keeping it clean on the PDF, to know if people visit your website from your CV. This is not bulletproof, because some systems may strip that information out, but every little thing helps when looking for your next job
 
 ## Resources
 
