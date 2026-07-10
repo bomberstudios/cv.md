@@ -1,4 +1,4 @@
-# CV
+# CV.md
 
 A small tool to generate nice, ATS-compliant PDF files from your Markdown CV. Works entirely online so you can make small adjustments to your CV from your mobile before applying to your dream job from the beach.
 
