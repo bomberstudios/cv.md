@@ -15,7 +15,7 @@ See [an example PDF of the output](https://github.com/bomberstudios/cv.md/blob/m
 
 ### If you'd rather keep things local
 
-You can run
+You can clone the repository, and run
 
 ```shell
 npm install
