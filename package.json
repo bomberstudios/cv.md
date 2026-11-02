@@ -9,5 +9,9 @@
   },
   "devDependencies": {
     "md-to-pdf": "^5.2.5"
+  },
+  "allowScripts": {
+    "puppeteer@25.12.0": true,
+    "fsevents@2.3.3": true
   }
 }
