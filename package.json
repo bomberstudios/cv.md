@@ -4,14 +4,16 @@
   "private": true,
   "scripts": {
     "start": "npm run build",
-    "build": "md-to-pdf cv.md --stylesheet style.css",
-    "watch": "md-to-pdf cv.md --stylesheet style.css --watch"
-  },
-  "devDependencies": {
-    "md-to-pdf": "^5.2.5"
+    "build": "node build.mjs",
+    "watch": "node --watch-path=cv.md --watch-path=style.css build.mjs"
   },
   "allowScripts": {
-    "puppeteer@25.12.0": true,
+    "puppeteer@25.16.0": true,
     "fsevents@2.3.3": true
+  },
+  "devDependencies": {
+    "gray-matter": "^4.0.3",
+    "marked": "^18.1.2",
+    "puppeteer": "^25.16.0"
   }
 }
