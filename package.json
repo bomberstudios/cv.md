@@ -8,8 +8,8 @@
     "watch": "node --watch-path=cv.md --watch-path=style.css build.mjs"
   },
   "allowScripts": {
-    "puppeteer@25.16.0": true,
-    "fsevents@2.3.3": true
+    "fsevents@2.3.3": true,
+    "puppeteer@25.18.1": true
   },
   "devDependencies": {
     "gray-matter": "^4.0.3",
